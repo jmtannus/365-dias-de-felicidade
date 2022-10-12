@@ -1,18 +1,17 @@
 import React from 'react';
-//import { StatusBar, SafeAreaView, View } from 'react-native';
+import { StatusBar, SafeAreaView, View, StyleSheet } from 'react-native';
+import Constants from 'expo-constants';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import {
   useFonts,
   Montserrat_400Regular,
   Montserrat_700Bold,
 } from '@expo-google-fonts/montserrat';
 import AppLoading from 'expo-app-loading';
-
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
 import PrimeiraTela from './src/telas/PrimeiraTela';
 import SegundaTela from './src/telas/SegundaTela';
-import mock from './src/mocks/primeiraTela';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -26,7 +25,7 @@ export default function App() {
     return <AppLoading />
   } return (
     <NavigationContainer>
-        <Stack.Navigator>
+        <Stack.Navigator defaultScreenOptions={SegundaTela}>
           <Stack.Screen
             name="PrimeiraTela"
             component={PrimeiraTela}

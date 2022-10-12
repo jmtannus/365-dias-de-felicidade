@@ -4,11 +4,13 @@ import { ScrollView, StyleSheet, View } from "react-native";
 import Topo from './componentes/Topo';
 import Detalhes from './componentes/Detalhes';
 
-export default function PrimeiraTela({ topo, detalhes}) {
+import mock from '../../mocks/primeiraTela';
+
+export default function PrimeiraTela({navigation}) {
   return <ScrollView>
-    <Topo {...topo} />
+    <Topo {...mock.topo} />
     <View style={estilos.inicial}>
-      <Detalhes {...detalhes} />
+      <Detalhes {...mock.detalhes} />
     </View>
   </ScrollView>
 }
