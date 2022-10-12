@@ -3,13 +3,12 @@ import {Dimensions, StyleSheet } from 'react-native';
 
 const width = Dimensions.get( 'screen' ).width;
 
-export default function Detalhes({ subtitulo, base, imagemNumero1, caixaTexto, }) {
+export default function Detalhes({ subtitulo, base, caixaTexto, }) {
     return <>
         <Texto style={estilos.subtitulo}>{ subtitulo }</Texto>
         <Image source={base} style={estilos.base} />
         
         <View style={estilos.numero}>
-            <Image source={imagemNumero1} style={estilos.imagemNumero1} />
             <Text style={estilos.caixaTexto}>{ caixaTexto }</Text>
         </View>
     </>

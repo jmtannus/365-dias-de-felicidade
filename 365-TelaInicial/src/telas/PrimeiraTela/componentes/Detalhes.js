@@ -3,10 +3,11 @@ import {Image, StyleSheet, Dimensions, View } from 'react-native';
 
 import Texto from '../../../componentes/Texto';
 import Botao from '../../../componentes/Botao';
+import AlertaEntrada from '../../../componentes/AlertaEntrada';
 
 const width = Dimensions.get( 'screen' ).width;
 
-export default function Detalhes({ subtitulo, login, senha, base, botao }) {
+export default function Detalhes({ subtitulo, login, senha, base, botao, navigation }) {
     return <>
         <Texto style={estilos.subtitulo}>{ subtitulo }</Texto>
 
@@ -15,8 +16,9 @@ export default function Detalhes({ subtitulo, login, senha, base, botao }) {
         	<Texto style={estilos.senha}>{ senha }</Texto>
 	    </View>
 
-        <Botao texto={botao} style={estilos.botao} onPress={() => {}} />
+        <Botao texto={botao} style={estilos.botao} onPress={() => navigation.navigate('SegundaTela')} />
         <Image source={base} style={estilos.base} /> 
+        <AlertaEntrada></AlertaEntrada>
     </>
 }
 const estilos = StyleSheet.create({
@@ -24,9 +26,9 @@ const estilos = StyleSheet.create({
         width: "100%",
         position: "absolute",
         textAlign: "center",
-        fontSize: 21,
+        fontSize: 18,
         lineHeight: 476,
-        color: "#000",
+        color: "#899e44",
         fontWeight: "bold",
         marginTop: 48,
         marginLeft: 8,

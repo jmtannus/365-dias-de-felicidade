@@ -3,12 +3,12 @@ import React from 'react';
 import { Image, StyleSheet, Dimensions } from 'react-native';
 
 import Texto from './../../../componentes/Texto';
-import pergunta from '../../../../assets/segTela/pergunta.png';
-import tresCoisas from '../../../../assets/segTela/tresCoisas.png';
+import pergunta from '../../../../assets/pergunta.png';
+import tresCoisas from '../../../../assets/tresCoisas.png';
 
 const width = Dimensions.get( 'screen' ).width;
 
-export default function Topo( {titulo, topo, logo } ) {
+export default function Topo( {titulo, topo, pergunta, tresCoisas } ) {
     return <>
         <Image source={topo} style={estilos.topo} />
         <Texto style={estilos.titulo}> { titulo } </Texto>

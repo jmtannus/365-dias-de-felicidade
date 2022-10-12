@@ -1,7 +1,5 @@
 import React from 'react';
-import { View, TextInput, Dimensions } from 'react-native';
-
-const width = Dimensions.get( 'screen' ).width;
+import { View, TextInput } from 'react-native';
 
 const UselessTextInput = (props) => {
   return (
@@ -12,10 +10,8 @@ const UselessTextInput = (props) => {
     />
   );
 }
-
 const UselessTextInputMultiline = () => {
   const [value, onChangeText] = React.useState('Useless Multiline Placeholder');
-
   // If you type something in the text box that is a color, the background will change to that
   // color.
   return (
@@ -35,5 +31,4 @@ const UselessTextInputMultiline = () => {
     </View>
   );
 }
-
 export default UselessTextInputMultiline;

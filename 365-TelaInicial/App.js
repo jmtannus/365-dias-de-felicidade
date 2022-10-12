@@ -1,5 +1,5 @@
 import React from 'react';
-import { StatusBar, SafeAreaView, View } from 'react-native';
+//import { StatusBar, SafeAreaView, View } from 'react-native';
 import {
   useFonts,
   Montserrat_400Regular,
@@ -7,8 +7,14 @@ import {
 } from '@expo-google-fonts/montserrat';
 import AppLoading from 'expo-app-loading';
 
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
 import PrimeiraTela from './src/telas/PrimeiraTela';
+import SegundaTela from './src/telas/SegundaTela';
 import mock from './src/mocks/primeiraTela';
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   const [fonteCarregada] = useFonts({
@@ -19,9 +25,15 @@ export default function App() {
   if (!fonteCarregada) {
     return <AppLoading />
   } return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <StatusBar />
-      <PrimeiraTela {...mock} />
-    </SafeAreaView>
+    <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen
+            name="PrimeiraTela"
+            component={PrimeiraTela}
+            options={{ title: "Bem vindo!"}}
+          />
+          <Stack.Screen name="SegundaTela" component={SegundaTela}/>
+        </Stack.Navigator>
+    </NavigationContainer>
   );
-}
+};

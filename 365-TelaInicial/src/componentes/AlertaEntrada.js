@@ -16,7 +16,6 @@ const AlertaEntrada = () => {
       "",
       "numeric"
     );
-
   return (
     <View style={styles.container}>
       <View style={{margin: 10}}>
@@ -25,7 +24,6 @@ const AlertaEntrada = () => {
     </View>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
