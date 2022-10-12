@@ -10,7 +10,7 @@ export default function PrimeiraTela({navigation}) {
   return <ScrollView>
     <Topo {...mock.topo} />
     <View style={estilos.inicial}>
-      <Detalhes {...mock.detalhes} />
+      <Detalhes {...mock.detalhes} navigation={navigation}/>
     </View>
   </ScrollView>
 }

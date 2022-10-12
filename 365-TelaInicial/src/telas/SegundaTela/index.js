@@ -4,11 +4,13 @@ import { StyleSheet, View } from "react-native";
 import Topo from './componentes/Topo';
 import Detalhes from './componentes/Detalhes';
 
-export default function SegundaTela({ topo, detalhes }) {
+import mock from '../../mocks/primeiraTela';
+
+export default function SegundaTela() {
   return <>
-    <Topo {...topo} />
+    <Topo {...mock.topo} />
     <View style={estilos.inicial}>
-      <Detalhes {...detalhes} />
+      <Detalhes {...mock.detalhes} />
     </View>
   </>
 }
