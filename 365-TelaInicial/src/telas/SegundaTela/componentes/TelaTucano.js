@@ -25,8 +25,8 @@ const estilos = StyleSheet.create({
         flexDirection: "column"
       },
     telaTucano: {
-      width: 200,
-      height: 400,
+        width: 384,
+        height: 760,
     },
     titulo: {
       width: "100%",
@@ -44,7 +44,7 @@ const estilos = StyleSheet.create({
         textAlign: "center",
         fontSize: 16,
         lineHeight: 26,
-        color: "#5f7862",
+        color: "#899e44",
         fontWeight: "bold",
         padding: 16,
     },
