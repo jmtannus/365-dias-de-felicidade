@@ -1,6 +1,7 @@
 import base from '../../assets/base.png';
 import logo from '../../assets/logo.png';
 import topo from '../../assets/topo.png';
+import telaTucano from '../../assets/telaTucano.png';
 
 import tela2 from '../../assets/tela2.png';
 
@@ -19,13 +20,12 @@ const textos = {
     base: base,
   },
   //segunda tela
-  topo2: {
+  telaEscrita: {
     titulo: "2ªpg AV1 22.2 JanaT²",
-    background: tela2,
-  }, 
-  detalhes2: {
+    imageBackground: tela2,
     subtitulo:":) Descreva o que te fez sorrir hoje: :)",
     botaoSalvar: "Salvar",
+    telaTucano: telaTucano,
   },
 }
 

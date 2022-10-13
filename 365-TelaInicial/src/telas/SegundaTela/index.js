@@ -6,9 +6,8 @@ import mock from '../../mocks/textos';
 
 export default function SegundaTela() {
   return <>
-    <TelaEscrita {...mock.textos} />
     <View style={estilos.inicial}>
-      <TelaEscrita {...mock.textos} />
+      <TelaEscrita {...mock.telaEscrita} />
     </View>
   </>
 }
