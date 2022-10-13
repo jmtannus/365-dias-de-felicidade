@@ -12,7 +12,7 @@ const textos = {
   },
   detalhes: {
     subtitulo: "O que te fez feliz hoje?",
-    login:"LOGIN",
+    login:"    LOGIN",
     senha: "SENHA",
     botao: "entrar",
     base: base,
@@ -23,7 +23,12 @@ const textos = {
     titulo: "2ªpg AV1 22.2 JanaT²",    
     subtitulo:":) Descreva o que te fez sorrir hoje: :)",
     logo: logo,
-    botaoSalvar: "Salvar",    
+    botaoSalvar: "Salvar",
+    textoBotao: "Salvar",
+    botao: "SALVAR",
+  },
+  botaoSalvar: {
+
   },
 }
 

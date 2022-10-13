@@ -32,7 +32,7 @@ const estilos = StyleSheet.create({
         lineHeight: 476,
         color: "#899e44",
         fontWeight: "bold",
-        marginTop: 48,
+        marginTop: 28,
         marginLeft: 8,
     },
     descrição: {
@@ -42,15 +42,15 @@ const estilos = StyleSheet.create({
     },
     //virar caixa de texto de entrada de e-mail
     logEsenha: {
-        flexDirection: "row",
-        paddingVertical: 140,
-        marginTop: 90,
-        marginLeft: 70,
+        flexDirection: "column",
+        paddingVertical: 125,
+        alignItems: "center",
     },
     login: {
         color: "#d1ab6f",
-        fontSize: 20,
-        lineHeight: 30,
+        fontSize: 21,
+        lineHeight: 20,
+        marginTop: 60,
         marginRight: 38,
         fontWeight: "bold",
         //marginBottom: 45,
@@ -59,13 +59,14 @@ const estilos = StyleSheet.create({
     //virar caixa de texto de entrada de senha
     senha: {
         color: "#d1ab6f",
-        fontSize: 20,
-        lineHeight: 30,
+        fontSize: 21,
+        lineHeight: 20,
+        marginTop: 8,
         fontWeight: "bold",
         textAlign: "center",
     },
         botao: {
-        marginTop: 285,
+        marginTop: 260,
         marginLeft:50,
         marginRight: 16,
         position: "absolute",
@@ -73,6 +74,7 @@ const estilos = StyleSheet.create({
         base: {
         width: "100%",
         height: 1252 / 2675 * width,
-        lineHeight: 26,
+        lineHeight: 22,
+        marginTop: -28,
     },
 })

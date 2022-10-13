@@ -9,13 +9,13 @@ const width = Dimensions.get( 'screen' ).width;
 
 export default function TelaTucano( {telaTucano, titulo, subtitulo, logo, botaoSalvar } ) {
     return <> 
-        <View style={estilos.container}>
-            <ImageBackground source={require('../../../../assets/base.png')} style={estilos.telaTucano} >
+        <View >
+            <Texto style={estilos.subtitulo}>{ subtitulo }</Texto>
+            <ImageBackground source={require('../../../../assets/telaTucano.png')} style={estilos.telaTucano} >
                 <Image source={logo} style={estilos.logo} />
-                <Texto style={estilos.titulo}> { titulo } </Texto>
-                <Texto style={estilos.subtitulo}> { subtitulo } </Texto>
                 <Botao texto={botaoSalvar} style={estilos.botaoSalvar} onPress={() => navigation.navigate('PrimeiraTela')} />
             </ImageBackground>
+            
         </View>
     </>;
 }
@@ -53,9 +53,10 @@ const estilos = StyleSheet.create({
         position: "absolute",
     },
     botaoSalvar: {
-        marginBotton: 285,
-        marginLeft:16,
-        marginRight: 16,
-        //position: "absolute",
+        marginTop: 400,
+        marginLeft:32,
+        marginRight: 32,
+        position: "absolute",
+        textAlign: "center",
     },
   })
