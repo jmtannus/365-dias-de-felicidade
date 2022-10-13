@@ -1,13 +1,13 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
-import TelaEscrita from "./componentes/TelaEscrita";
+import TelaTucano from "./componentes/TelaTucano";
 
 import mock from '../../mocks/textos';
 
 export default function SegundaTela() {
   return <>
     <View style={estilos.inicial}>
-      <TelaEscrita {...mock.telaEscrita} />
+      <TelaTucano {...mock.telaEscrita} />
     </View>
   </>
 }
