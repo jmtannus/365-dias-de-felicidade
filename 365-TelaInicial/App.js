@@ -1,5 +1,5 @@
 import React from 'react';
-//import { StatusBar, SafeAreaView, View, StyleSheet } from 'react-native';
+import { View, Text } from 'react-native';
 //import Constants from 'expo-constants';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
