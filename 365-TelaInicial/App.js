@@ -11,6 +11,7 @@ import {
 import AppLoading from 'expo-app-loading';
 import PrimeiraTela from './src/telas/PrimeiraTela';
 import SegundaTela from './src/telas/SegundaTela';
+import TerceiraTela from './src/telas/TerceiraTela';
 
 
 const Stack = createNativeStackNavigator();
@@ -32,6 +33,7 @@ export default function App() {
             options={{ title: "Bem vindo!"}}
           />
           <Stack.Screen name="SegundaTela" component={SegundaTela}/>
+          <Stack.Screen name="TerceiraTela" component={TerceiraTela}/>
         </Stack.Navigator>
     </NavigationContainer>
   );

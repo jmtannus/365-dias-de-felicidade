@@ -9,7 +9,7 @@ import textos from '../../../mocks/textos';
 
 const width = Dimensions.get( 'screen' ).width;
 
-export default function TelaTucano( {navigation } ) {
+export default function TelaTucano( {navigation} ) {
     return <> 
         <View >
             <Texto style={estilos.subtitulo}>{ textos.telaTucano.subtitulo }</Texto>

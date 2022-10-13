@@ -17,7 +17,7 @@ export default function Detalhes({ subtitulo, login, senha, base, botao, navigat
         	<Texto style={estilos.senha}>{ senha }</Texto>
 	    </View>
 
-        <Botao texto={botao} style={estilos.botao} onPress={() => navigation.navigate('SegundaTela')} />
+        <Botao texto={botao} style={estilos.botao} onPress={() => navigation.navigate('TerceiraTela')} />
         <Image source={base} style={estilos.base} /> 
         <AlertaEntrada></AlertaEntrada>
         </SafeAreaView>
