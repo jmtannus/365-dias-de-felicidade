@@ -1,23 +1,22 @@
 //index rnbc
 import React from 'react';
-import { Image, StyleSheet, Dimensions, ImageBackground, View } from 'react-native';
+import { Image, StyleSheet, ImageBackground, View } from 'react-native';
 
 import Texto from './../../../componentes/Texto';
 import Botao from '../../../componentes/Botao';
 
 import textos from '../../../mocks/textos';
 
-const width = Dimensions.get( 'screen' ).width;
-
 export default function TelaTucano( {navigation } ) {
     return <> 
         <View >
-            <Texto style={estilos.subtitulo}>{ textos.telaTucano.subtitulo }</Texto>
             <ImageBackground source={require('../../../../assets/telaTucano.png')} style={estilos.telaTucano} >
-                <Image source={textos.telaTucano.logo} style={estilos.logo} />
+            <   Image source={textos.telaTucano.logo} style={estilos.logo} />
+                <Texto style={estilos.titulo}>{ textos.telaTucano.titulo }</Texto>
+                <Texto style={estilos.subtitulo}>{ textos.telaTucano.subtitulo }</Texto>
+                <Texto style={estilos.subtitulo1}>{ textos.telaTucano.subtitulo1 }</Texto>
                 <Botao texto={textos.telaTucano.botaoSalvar} style={estilos.botaoSalvar} onPress={() => navigation.navigate('PrimeiraTela')} />
             </ImageBackground>
-            
         </View>
     </>;
 }
@@ -27,37 +26,47 @@ const estilos = StyleSheet.create({
         flexDirection: "column"
     },
     telaTucano: {
-        width: 384,
-        height: 760,
+        width: 378,
+        height: 788,
     },
-    titulo: {
-      textAlign: "center",
-      fontSize: 16,
-      lineHeight: 26,
-      color: "#5f7862",
-      fontWeight: "bold",
-      padding: 16,
-    },
-    subtitulo: {
+        titulo: {
+        width: "100%",
         position: "absolute",
         textAlign: "center",
-        fontSize: 16,
-        lineHeight: 26,
-        color: "#899e44",
+        fontSize: 11,
+        lineHeight: 22,
+        color: "#5f7862",
         fontWeight: "bold",
-        padding: 16,
     },
     logo: {
-        width: 330,
-        height: 260,
-        marginTop: 110,
+        width: 187,
+        height: 150,
+        marginTop: 40,
         marginLeft: 18,
         position: "absolute",
     },
+
+    subtitulo: {
+        color: "#d1ab6f",
+        fontSize: 20,
+        lineHeight: 22,
+        marginTop: 230,
+        fontWeight: "bold",
+        textAlign: "center",
+    },
+    subtitulo1: {
+        color: "#d1ab6f",
+        fontSize: 19,
+        lineHeight: 24,
+        marginTop: 8,
+        fontWeight: "bold",
+        textAlign: "center",
+    },
+
     botaoSalvar: {
-        marginTop: 400,
-        marginLeft:32,
-        marginRight: 32,
+        marginTop: 450,
+        marginLeft: 40,
+        marginRight: 40,
         position: "absolute",
         textAlign: "center",
     },

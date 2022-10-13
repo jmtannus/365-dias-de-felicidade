@@ -21,7 +21,8 @@ const textos = {
   telaTucano: {
     telaTucano: telaTucano,
     titulo: "2ªpg AV1 22.2 JanaT²",    
-    subtitulo:":) Descreva o que te fez sorrir hoje: :)",
+    subtitulo:":) Descreva o que te",
+    subtitulo1:"fez sorrir hoje: :)",
     logo: logo,
     botaoSalvar: "Salvar",
     textoBotao: "Salvar",
