@@ -29,10 +29,9 @@ const estilos = StyleSheet.create({
       width: "100%",
       position: "absolute",
       textAlign: "center",
-      fontSize: 16,
-      lineHeight: 26,
+      fontSize: 11,
+      lineHeight: 22,
       color: "#5f7862",
       fontWeight: "bold",
-      padding: 16,
     },
   })
