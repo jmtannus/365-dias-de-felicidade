@@ -5,15 +5,17 @@ import { Image, StyleSheet, Dimensions, ImageBackground, View } from 'react-nati
 import Texto from './../../../componentes/Texto';
 import Botao from '../../../componentes/Botao';
 
+import textos from '../../../mocks/textos';
+
 const width = Dimensions.get( 'screen' ).width;
 
-export default function TelaTucano( {telaTucano, titulo, subtitulo, logo, botaoSalvar } ) {
+export default function TelaTucano( {navigation } ) {
     return <> 
         <View >
-            <Texto style={estilos.subtitulo}>{ subtitulo }</Texto>
+            <Texto style={estilos.subtitulo}>{ textos.telaTucano.subtitulo }</Texto>
             <ImageBackground source={require('../../../../assets/telaTucano.png')} style={estilos.telaTucano} >
-                <Image source={logo} style={estilos.logo} />
-                <Botao texto={botaoSalvar} style={estilos.botaoSalvar} onPress={() => navigation.navigate('PrimeiraTela')} />
+                <Image source={textos.telaTucano.logo} style={estilos.logo} />
+                <Botao texto={textos.telaTucano.botaoSalvar} style={estilos.botaoSalvar} onPress={() => navigation.navigate('PrimeiraTela')} />
             </ImageBackground>
             
         </View>

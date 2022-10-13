@@ -4,10 +4,10 @@ import TelaTucano from "./componentes/TelaTucano";
 
 import mock from '../../mocks/textos';
 
-export default function SegundaTela() {
+export default function SegundaTela({navigation}) {
   return <>
     <View style={estilos.inicial}>
-      <TelaTucano {...mock.telaEscrita} />
+      <TelaTucano navigation={navigation}/>
     </View>
   </>
 }
