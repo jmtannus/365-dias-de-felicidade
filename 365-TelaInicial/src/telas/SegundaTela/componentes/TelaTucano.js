@@ -18,7 +18,7 @@ export default function TelaTucano( {navigation } ) {
                 <Texto style={estilos.subtitulo1}>{ textos.telaTucano.subtitulo1 }</Texto>
                 <CaixaTexto style={estilos.caixadetexto}>{ textos.telaTucano.caixadetexto }</CaixaTexto>
 
-                <Botao texto={textos.telaTucano.botaoSalvar} style={estilos.botaoSalvar} onPress={() => navigation.navigate('PrimeiraTela')} />
+                <Botao texto={textos.telaTucano.botaoSalvar} style={estilos.botaoSalvar} onPress={() => navigation.navigate('TerceiraTela')} />
             </ImageBackground>
         </View>
     </>;

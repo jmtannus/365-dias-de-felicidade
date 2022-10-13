@@ -16,4 +16,5 @@ const estilos = StyleSheet.create({
     paddingVertical: 8,
     paddingHorizontal: 8,
   },
+  
 })

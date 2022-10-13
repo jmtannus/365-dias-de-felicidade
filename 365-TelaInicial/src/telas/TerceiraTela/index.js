@@ -11,7 +11,7 @@ const DATA = [
   },
   {
     id: "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
-    title: "Estudei e e fui para a academia. Já perdi 2 kg e vou chegar na minha meta!!!",
+    title: "Estudei e fui para a academia. Já perdi 2 kg e vou chegar na minha meta!!!",
   }, 
 ];
 
@@ -40,7 +40,7 @@ export default function TerceiraTela({navigation}) {
         keyExtractor={(item) => item.id}
         extraData={selectedId}
       />
-       <Botao texto='Voltar' style={styles.botao} onPress={() => navigation.navigate('SegundaTela')} />
+       <Botao texto='Voltar' style={styles.botao} onPress={() => navigation.navigate('PrimeiraTela')} />
     </SafeAreaView>
   );
 }
