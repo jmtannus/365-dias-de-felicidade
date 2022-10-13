@@ -10,7 +10,7 @@ const width = Dimensions.get( 'screen' ).width;
 export default function TelaTucano( {telaTucano, titulo, subtitulo, logo, botaoSalvar } ) {
     return <> 
         <View style={estilos.container}>
-            <ImageBackground source={require('../../../../assets/telaTucano.png')} style={estilos.telaTucano} >
+            <ImageBackground source={require('../../../../assets/base.png')} style={estilos.telaTucano} >
                 <Image source={logo} style={estilos.logo} />
                 <Texto style={estilos.titulo}> { titulo } </Texto>
                 <Texto style={estilos.subtitulo}> { subtitulo } </Texto>
@@ -23,14 +23,12 @@ const estilos = StyleSheet.create({
     container: {
         flex: 1,
         flexDirection: "column"
-      },
+    },
     telaTucano: {
         width: 384,
         height: 760,
     },
     titulo: {
-      width: "100%",
-      position: "absolute",
       textAlign: "center",
       fontSize: 16,
       lineHeight: 26,
@@ -39,7 +37,6 @@ const estilos = StyleSheet.create({
       padding: 16,
     },
     subtitulo: {
-        width: "100%",
         position: "absolute",
         textAlign: "center",
         fontSize: 16,
