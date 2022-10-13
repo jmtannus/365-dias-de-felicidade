@@ -20,13 +20,13 @@ const textos = {
   //segunda tela
   telaTucano: {
     telaTucano: telaTucano,
+    logo: logo,
     titulo: "2ªpg AV1 22.2 JanaT²",    
     subtitulo:":) Descreva o que te",
     subtitulo1:"fez sorrir hoje: :)",
-    logo: logo,
+    caixadetexto: "primeira",
     botaoSalvar: "Salvar",
     textoBotao: "Salvar",
-    botao: "SALVAR",
   },
   botaoSalvar: {
 

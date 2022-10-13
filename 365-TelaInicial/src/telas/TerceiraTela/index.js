@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
   },
   
   botao: {
-    marginTop: 260,
+    marginTop: 400,
     marginLeft:50,
     marginRight: 16,
     position: "absolute",

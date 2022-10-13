@@ -1,34 +1,30 @@
 import React from 'react';
-import { View, TextInput } from 'react-native';
+import { View, TextInput, StyleSheet, Text, TouchableHighlight } from 'react-native';
 
-const UselessTextInput = (props) => {
+import Texto from '../../src/componentes/Texto';
+
+export default function CaixaDeTexto({}){
+  
   return (
-    <TextInput
-      {...props} // Inherit any props passed to it; e.g., multiline, numberOfLines below
-      editable
-      maxLength={40}
-    />
-  );
-}
-const UselessTextInputMultiline = () => {
-  const [value, onChangeText] = React.useState('Useless Multiline Placeholder');
-  // If you type something in the text box that is a color, the background will change to that
-  // color.
-  return (
-    <View
-      style={{
-        backgroundColor: value,
-        borderBottomColor: '#f17119',
-        borderBottomWidth: 1,
-      }}>
-      <UselessTextInput
-        multiline
-        numberOfLines={4}
-        onChangeText={text => onChangeText(text)}
-        value={value}
-        style={{padding: 10}}
-      />
+    <View style={{paddingTop: 25}}>
+      <Text>Desejos pra vida</Text>
+      <TextInput
+        style={estilos.inputText}
+        placeholder="FELICIDADE (pra cansar a bochecha de tanto sorrir)"
+        onChangeText={(text) => this.setState({ text })}
+        maxLength={40}/>
     </View>
   );
 }
-export default UselessTextInputMultiline;
+const estilos = StyleSheet.create({
+  inputText: {
+    height: 100,
+    borderWidth: 1,
+    padding: 10,
+  },
+  textoaula: {
+    padding:10, 
+    fontSize: 40
+  },
+
+})
