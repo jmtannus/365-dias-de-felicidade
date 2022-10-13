@@ -18,7 +18,7 @@ const UselessTextInputMultiline = () => {
     <View
       style={{
         backgroundColor: value,
-        borderBottomColor: '#000000',
+        borderBottomColor: '#f17119',
         borderBottomWidth: 1,
       }}>
       <UselessTextInput
