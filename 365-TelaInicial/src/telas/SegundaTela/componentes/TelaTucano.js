@@ -1,29 +1,32 @@
 //index rnbc
 import React from 'react';
-import { Image, StyleSheet, Dimensions } from 'react-native';
+import { Image, StyleSheet, Dimensions, ImageBackground, View } from 'react-native';
 
 import Texto from './../../../componentes/Texto';
+import Botao from '../../../componentes/Botao';
 
 const width = Dimensions.get( 'screen' ).width;
 
-export default function Topo( {titulo, topo, logo } ) {
-    return <>
-        <Image source={topo} style={estilos.topo} />
-        <Texto style={estilos.titulo}> { titulo } </Texto>
-        <Image source={logo} style={estilos.logo} />
+export default function TelaTucano( {telaTucano, titulo, subtitulo, logo, botaoSalvar } ) {
+    return <> 
+        <View style={estilos.container}>
+            <ImageBackground source={require('../../../../assets/telaTucano.png')} style={estilos.telaTucano} >
+                <Image source={logo} style={estilos.logo} />
+                <Texto style={estilos.titulo}> { titulo } </Texto>
+                <Texto style={estilos.subtitulo}> { subtitulo } </Texto>
+                <Botao texto={botaoSalvar} style={estilos.botaoSalvar} onPress={() => navigation.navigate('PrimeiraTela')} />
+            </ImageBackground>
+        </View>
     </>;
 }
 const estilos = StyleSheet.create({
-    topo: {
-      width: "100%",
-      height: 349 / 640 * width,
-    },
-    logo: {
-      width: 330,
-      height: 260,
-      marginTop: 110,
-      marginLeft: 18,
-      position: "absolute",
+    container: {
+        flex: 1,
+        flexDirection: "column"
+      },
+    telaTucano: {
+      width: 200,
+      height: 400,
     },
     titulo: {
       width: "100%",
@@ -34,5 +37,28 @@ const estilos = StyleSheet.create({
       color: "#5f7862",
       fontWeight: "bold",
       padding: 16,
+    },
+    subtitulo: {
+        width: "100%",
+        position: "absolute",
+        textAlign: "center",
+        fontSize: 16,
+        lineHeight: 26,
+        color: "#5f7862",
+        fontWeight: "bold",
+        padding: 16,
+    },
+    logo: {
+        width: 330,
+        height: 260,
+        marginTop: 110,
+        marginLeft: 18,
+        position: "absolute",
+    },
+    botaoSalvar: {
+        marginBotton: 285,
+        marginLeft:16,
+        marginRight: 16,
+        //position: "absolute",
     },
   })
