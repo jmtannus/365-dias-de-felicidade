@@ -12,7 +12,7 @@ export default function TelaTucano( {navigation } ) {
     return <> 
         <View >
             <ImageBackground source={require('../../../../assets/telaTucano.png')} style={estilos.telaTucano} >
-            <   Image source={textos.telaTucano.logo} style={estilos.logo} />
+                <Image source={textos.telaTucano.logo} style={estilos.logo} />
                 <Texto style={estilos.titulo}>{ textos.telaTucano.titulo }</Texto>
                 <Texto style={estilos.subtitulo}>{ textos.telaTucano.subtitulo }</Texto>
                 <Texto style={estilos.subtitulo1}>{ textos.telaTucano.subtitulo1 }</Texto>
@@ -29,8 +29,8 @@ const estilos = StyleSheet.create({
         flexDirection: "column"
     },
     telaTucano: {
-        width: 378,
-        height: 788,
+        width: 388,
+        height: 798,
     },
         titulo: {
         width: "100%",
@@ -52,7 +52,7 @@ const estilos = StyleSheet.create({
         color: "#d1ab6f",
         fontSize: 20,
         lineHeight: 22,
-        marginTop: 230,
+        marginTop: 222,
         fontWeight: "bold",
         textAlign: "center",
     },
@@ -64,18 +64,8 @@ const estilos = StyleSheet.create({
         fontWeight: "bold",
         textAlign: "center",
     },
-    caixadetexto: {
-        color: "#fff",
-        fontSize: 15,
-        lineHeight: 22,
-        marginTop: 230,
-        fontWeight: "bold",
-        textAlign: "center",
-
-    },
-
     botaoSalvar: {
-        marginTop: 450,
+        marginTop: 460,
         marginLeft: 40,
         marginRight: 40,
         position: "absolute",

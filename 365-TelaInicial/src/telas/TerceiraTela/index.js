@@ -1,25 +1,28 @@
 import React, { useState } from "react";
-import { FlatList, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity } from "react-native";
+import { FlatList, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity, ImageBackground, ScrollView } from "react-native";
 
 import Botao from '../../componentes/Botao';
 
-
 const DATA = [
   {
-    id: "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
-    title: "Mais um dia feliz com minha família, que bom!",
+    id: "1",
+    title: "Ter passado mais um dia feliz com minha família",
   },
   {
-    id: "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
-    title: "Estudei e fui para a academia. Já perdi 2 kg e vou chegar na minha meta!!!",
+    id: "2",
+    title: "Ver o aplicativo 365 dias de felicidade funcionando pela primeira vez!",
   }, 
+  {
+    id: "3",
+    title: "Olhar para o céu e ver o céu limpo e iluminado pela maior lua do ano!",
+  },
 ];
 
 export default function TerceiraTela({navigation}) {
   const [selectedId, setSelectedId] = useState(null);
 
   const renderItem = ({ item }) => {
-    const backgroundColor = item.id === selectedId ? "#6e3b6e" : "#f9c2ff";
+    const backgroundColor = item.id === selectedId ? "#69a155" : "#5af269";
     const color = item.id === selectedId ? 'white' : 'black';
 
     return (
@@ -33,25 +36,29 @@ export default function TerceiraTela({navigation}) {
   };
 
   return (
-    <SafeAreaView style={styles.container}>
-      <FlatList
-        data={DATA}
-        renderItem={renderItem}
-        keyExtractor={(item) => item.id}
-        extraData={selectedId}
-      />
-       <Botao texto='Voltar' style={styles.botao} onPress={() => navigation.navigate('PrimeiraTela')} />
-    </SafeAreaView>
+    <ScrollView>
+      <SafeAreaView style={estilos.container}>    
+        <ImageBackground source={require('../../../assets/backgndLFlor.png')} style={estilos.bgdLaranjaFlor} >
+          <FlatList
+          data={DATA}
+          renderItem={renderItem}
+          keyExtractor={(item) => item.id}
+          extraData={selectedId}
+          />
+        <Botao texto='Voltar' style={estilos.botao} onPress={() => navigation.navigate('PrimeiraTela')} />
+        </ImageBackground>     
+      </SafeAreaView>
+    </ScrollView>
   );
 }
 
 const Item = ({ item, onPress, backgroundColor, textColor }) => (
-  <TouchableOpacity onPress={onPress} style={[styles.item, backgroundColor]}>
-    <Text style={[styles.title, textColor]}>{item.title}</Text>
+  <TouchableOpacity onPress={onPress} style={[estilos.item, backgroundColor]}>
+    <Text style={[estilos.title, textColor]}>{item.title}</Text>
   </TouchableOpacity>
 );
 
-const styles = StyleSheet.create({
+const estilos = StyleSheet.create({
   container: {
     flex: 1,
     marginTop: StatusBar.currentHeight || 0,
@@ -59,17 +66,23 @@ const styles = StyleSheet.create({
   item: {
     padding: 20,
     marginVertical: 8,
-    marginHorizontal: 16,
+    marginHorizontal: 18,
+    borderRadius: 4,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   title: {
-    fontSize: 20,
+    fontSize: 16,
   },
-  
   botao: {
-    marginTop: 400,
+    marginTop: 470,
     marginLeft:50,
     marginRight: 16,
     position: "absolute",
-  }
+  },
+  bgdLaranjaFlor: {
+    width: 378,
+    height: 788,
+},
   
 });

@@ -1,9 +1,7 @@
 import React from 'react';
 import {Image, StyleSheet, SafeAreaView, Dimensions, View } from 'react-native';
-
 import Texto from '../../../componentes/Texto';
 import Botao from '../../../componentes/Botao';
-import AlertaEntrada from '../../../componentes/AlertaEntrada';
 
 const width = Dimensions.get( 'screen' ).width;
 
@@ -19,7 +17,6 @@ export default function Detalhes({ subtitulo, login, senha, base, botao, navigat
 
         <Botao texto={botao} style={estilos.botao} onPress={() => navigation.navigate('SegundaTela')} />
         <Image source={base} style={estilos.base} /> 
-        <AlertaEntrada></AlertaEntrada>
         </SafeAreaView>
     </>
 }
@@ -53,7 +50,6 @@ const estilos = StyleSheet.create({
         marginTop: 60,
         marginRight: 38,
         fontWeight: "bold",
-        //marginBottom: 45,
         textAlign: "center",
     },
     //virar caixa de texto de entrada de senha

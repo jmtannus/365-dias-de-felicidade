@@ -23,13 +23,10 @@ const textos = {
     logo: logo,
     titulo: "2ªpg AV1 22.2 JanaT²",    
     subtitulo:":) Descreva o que te",
-    subtitulo1:"fez sorrir hoje: :)",
+    subtitulo1:" fez sorrir hoje: :D",
     caixadetexto: "primeira",
     botaoSalvar: "Salvar",
     textoBotao: "Salvar",
-  },
-  botaoSalvar: {
-
   },
 }
 

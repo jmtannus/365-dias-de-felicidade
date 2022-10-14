@@ -2,8 +2,6 @@ import React from "react";
 import { StyleSheet, View } from "react-native";
 import TelaTucano from "./componentes/TelaTucano";
 
-import mock from '../../mocks/textos';
-
 export default function SegundaTela({navigation}) {
   return <>
     <View style={estilos.inicial}>
@@ -13,8 +11,9 @@ export default function SegundaTela({navigation}) {
 }
 const estilos = StyleSheet.create({
   inicial: {
-    paddingVertical: 8,
+    flex: 1,
     paddingHorizontal: 8,
+    paddingVertical: 2,
   },
   
 })
