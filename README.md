@@ -10,7 +10,7 @@ Projeto AV1, utilizando as ferramentas do React Native com Expo.
 | :fire: Desafio     | 
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
-![](C:\Projetos\programacao-dispositivos-moveis\365-dias-de-felicidade\365-TelaInicial\assets\icon.png?text=imagem+lindona+do+meu+projeto#vitrinedev)
+![](https://via.placeholder.com/1200x500.png?text=imagem+lindona+do+meu+projeto#vitrinedev)
 
 ## Detalhes do projeto
 
