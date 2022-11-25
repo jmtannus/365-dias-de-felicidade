@@ -32,5 +32,5 @@ export default function App() {
           <Stack.Screen name="TerceiraTela" component={TerceiraTela} options={{headerTransparent: true}} />
         </Stack.Navigator>
     </NavigationContainer>
-  );
+  );
 };
