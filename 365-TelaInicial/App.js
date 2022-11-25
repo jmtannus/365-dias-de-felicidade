@@ -27,10 +27,10 @@ export default function App() {
   } return (
     <NavigationContainer>
         <Stack.Navigator defaultScreenOptions={SegundaTela}>
-          <Stack.Screen name="PrimeiraTela" component={PrimeiraTela} options={{ title: "Bem vindo!"}} />
-          <Stack.Screen name="SegundaTela" component={SegundaTela}/>
-          <Stack.Screen name="TerceiraTela" component={TerceiraTela}/>
+          <Stack.Screen name="PrimeiraTela" component={PrimeiraTela} options={{headerShown: false}} />
+          <Stack.Screen name="SegundaTela" component={SegundaTela} options={{headerTransparent: true}} />
+          <Stack.Screen name="TerceiraTela" component={TerceiraTela} options={{headerTransparent: true}} />
         </Stack.Navigator>
     </NavigationContainer>
-  );
+  );
 };
