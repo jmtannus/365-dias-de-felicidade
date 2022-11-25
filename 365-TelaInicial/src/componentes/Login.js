@@ -25,15 +25,15 @@ export default function Login({}){
 }
 const estilos = StyleSheet.create({
   inputText: {
-    height: 85,
-    borderWidth: 2,
+    height: 78,
+    borderWidth: 1,
     textAlign: "center",
     borderColor: "#d4bb94",
     borderRadius: 3,
     padding: 10,
   },
   descricaoLoginSenha: {
-    padding:8, 
+    padding:10, 
     fontSize: 15,
     color: "#899e44",
   },

@@ -3,27 +3,26 @@ import { StyleSheet, TouchableOpacity } from 'react-native';
 
 import Texto from './Texto';
 
-export default function Botao({ texto, onPress, style }) {
-  return <TouchableOpacity style={[estilos.botao, style]} onPress={onPress}>
-  <Texto style={estilos.textoBotao}>{ texto }</Texto>
+export default function Cadastro({ texto, onPress, style }) {
+  return <TouchableOpacity style={[estilos.botaoCadastro, style]} onPress={onPress}>
+  <Texto style={estilos.textoBotaoCadastro}>{ texto }</Texto>
 </TouchableOpacity>
 }
 
 const estilos = StyleSheet.create({
-  botao: {
+  botaoCadastro: {
     backgroundColor: "#d4bb94",
     paddingVertical: 8,
-    paddingHorizontal: 106,
+    paddingHorizontal: 99,
     borderRadius: 16,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  textoBotao: {
+  textoBotaoCadastro: {
     textAlign: "center",
     color: "#fff",
-    fontSize: 16,
+    fontSize: 14,
     lineHeight: 26,
     fontWeight: "bold",
-    maxLength: 40,
   },
 });

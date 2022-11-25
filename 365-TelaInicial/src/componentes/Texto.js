@@ -17,6 +17,7 @@ const estilos = StyleSheet.create({
     textoNegrito: {
         fontFamily: "MontserratBold",
         fontWeight: "normal",
+        maxLength: 40,
     },
     subtitulo: {
         width: "100%",

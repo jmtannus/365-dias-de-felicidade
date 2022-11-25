@@ -13,6 +13,7 @@ const textos = {
   detalhes: {
     subtitulo: "O que te fez feliz hoje?",
     botao: "entrar",
+    botaoCadastro: "sou novo",
     base: base,
   },
   //segunda tela

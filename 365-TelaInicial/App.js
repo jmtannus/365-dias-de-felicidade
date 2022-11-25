@@ -13,7 +13,6 @@ import PrimeiraTela from './src/telas/PrimeiraTela';
 import SegundaTela from './src/telas/SegundaTela';
 import TerceiraTela from './src/telas/TerceiraTela';
 
-
 const Stack = createNativeStackNavigator();
 
 export default function App() {

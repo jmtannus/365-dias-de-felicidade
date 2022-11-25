@@ -3,11 +3,12 @@ import { Image, StyleSheet, SafeAreaView, Dimensions, View } from 'react-native'
 import Texto from '../../../componentes/Texto';
 import Login from '../../../componentes/Login';
 import Botao from '../../../componentes/Botao';
+import Cadastro from '../../../componentes/Cadastro';
 import textos from '../../../mocks/textos';
 
 const width = Dimensions.get('screen').width;
 
-export default function Detalhes({ subtitulo, login, senha, base, botao, navigation }) {
+export default function Detalhes({ subtitulo, login, senha, base, botao, botaoCadastro, navigation }) {
     return <>
         <SafeAreaView>
             <Texto style={estilos.subtitulo}>{subtitulo}</Texto>
@@ -18,6 +19,8 @@ export default function Detalhes({ subtitulo, login, senha, base, botao, navigat
                 <Texto style={estilos.senha}>{senha}</Texto>
             </View>
             <Botao texto={botao} style={estilos.botao} onPress={() => navigation.navigate('SegundaTela')} />
+            <Cadastro texto={botaoCadastro} style={estilos.botaoCadastro} onPress={() => navigation.navigate('SegundaTela')}/>
+            
             <Image source={base} style={estilos.base} />
         </SafeAreaView>
     </>
@@ -27,44 +30,31 @@ const estilos = StyleSheet.create({
         width: "100%",
         position: "absolute",
         textAlign: "center",
-        fontSize: 18,
+        fontSize: 22,
         lineHeight: 476,
         color: "#899e44",
         fontWeight: "bold",
-        marginTop: 28,
-        marginLeft: 8,
+        marginTop: -150,
     },
     descrição: {
         color: "#A3A3A3",
         fontSize: 16,
         lineHeight: 26,
     },
-    //virar caixa de texto de entrada de e-mail
+    //caixa de texto de entrada de e-mail
     logEsenha: {
         flexDirection: "column",
-        paddingVertical: 125,
+        paddingVertical: 70,
         alignItems: "center",
     },
-    login: {
-        color: "#d1ab6f",
-        fontSize: 21,
-        lineHeight: 20,
-        marginTop: 60,
-        marginRight: 38,
-        fontWeight: "bold",
-        textAlign: "center",
-    },
-    //virar caixa de texto de entrada de senha
-    senha: {
-        color: "#d1ab6f",
-        fontSize: 21,
-        lineHeight: 20,
-        marginTop: 8,
-        fontWeight: "bold",
-        textAlign: "center",
-    },
     botao: {
-        marginTop: 260,
+        marginTop: 320,
+        marginLeft: 50,
+        marginRight: 16,
+        position: "absolute",
+    },
+    botaoCadastro: {
+        marginTop: 368,
         marginLeft: 50,
         marginRight: 16,
         position: "absolute",
@@ -73,6 +63,6 @@ const estilos = StyleSheet.create({
         width: "100%",
         height: 1252 / 2675 * width,
         lineHeight: 22,
-        marginTop: -28,
+        marginTop: -80,
     },
 })

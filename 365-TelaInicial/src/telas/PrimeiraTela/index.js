@@ -20,7 +20,7 @@ export default function PrimeiraTela({ navigation }) {
 }
 const estilos = StyleSheet.create({
   inicial: {
-    paddingVertical: 8,
-    paddingHorizontal: 8,
+    paddingVertical: 2,
+    paddingHorizontal: 1,
   },
 })

@@ -19,9 +19,9 @@ const estilos = StyleSheet.create({
       height: 349 / 640 * width,
     },
     logo: {
-      width: 300,
-      height: 233,
-      marginTop: 110,
+      width: 226,
+      height: 182,
+      marginTop: 70,
       marginLeft: 28,
       position: "absolute",
     },
