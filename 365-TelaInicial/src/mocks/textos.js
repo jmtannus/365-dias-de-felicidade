@@ -12,8 +12,6 @@ const textos = {
   },
   detalhes: {
     subtitulo: "O que te fez feliz hoje?",
-    login:"    LOGIN",
-    senha: "SENHA",
     botao: "entrar",
     base: base,
   },

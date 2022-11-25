@@ -1,7 +1,9 @@
 import React from 'react';
 import { Image, StyleSheet, SafeAreaView, Dimensions, View } from 'react-native';
 import Texto from '../../../componentes/Texto';
+import Login from '../../../componentes/Login';
 import Botao from '../../../componentes/Botao';
+import textos from '../../../mocks/textos';
 
 const width = Dimensions.get('screen').width;
 
@@ -11,10 +13,10 @@ export default function Detalhes({ subtitulo, login, senha, base, botao, navigat
             <Texto style={estilos.subtitulo}>{subtitulo}</Texto>
 
             <View style={estilos.logEsenha}>
-                <Texto style={estilos.login}>{login}</Texto>
+                <Login>{ textos.detalhes.login }</Login>
+                <Texto style={estilos.login}>{login}</Texto>                
                 <Texto style={estilos.senha}>{senha}</Texto>
             </View>
-
             <Botao texto={botao} style={estilos.botao} onPress={() => navigation.navigate('SegundaTela')} />
             <Image source={base} style={estilos.base} />
         </SafeAreaView>

@@ -16,7 +16,7 @@ export default function TelaTucano( {navigation } ) {
                 <Texto style={estilos.titulo}>{ textos.telaTucano.titulo }</Texto>
                 <Texto style={estilos.subtitulo}>{ textos.telaTucano.subtitulo }</Texto>
                 <Texto style={estilos.subtitulo1}>{ textos.telaTucano.subtitulo1 }</Texto>
-                <CaixaTexto style={estilos.caixadetexto}>{ textos.telaTucano.caixadetexto }</CaixaTexto>
+                <CaixaTexto>{ textos.telaTucano.caixadetexto }</CaixaTexto>
 
                 <Botao texto={textos.telaTucano.botaoSalvar} style={estilos.botaoSalvar} onPress={() => navigation.navigate('TerceiraTela')} />
             </ImageBackground>
@@ -32,7 +32,7 @@ const estilos = StyleSheet.create({
         width: 388,
         height: 798,
     },
-        titulo: {
+    titulo: {
         width: "100%",
         position: "absolute",
         textAlign: "center",
