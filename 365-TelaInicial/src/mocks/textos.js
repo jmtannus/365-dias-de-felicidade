@@ -16,6 +16,7 @@ const textos = {
     botaoCadastro: "sou novo",
     base: base,
   },
+  
   //segunda tela
   telaTucano: {
     telaTucano: telaTucano,

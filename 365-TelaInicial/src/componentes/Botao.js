@@ -17,6 +17,7 @@ const estilos = StyleSheet.create({
     borderRadius: 16,
     alignItems: 'center',
     justifyContent: 'center',
+    elevation: 5
   },
   textoBotao: {
     textAlign: "center",

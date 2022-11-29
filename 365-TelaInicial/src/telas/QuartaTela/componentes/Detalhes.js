@@ -2,13 +2,11 @@ import React from 'react';
 import { Image, StyleSheet, SafeAreaView, Dimensions, View } from 'react-native';
 import Texto from '../../../componentes/Texto';
 import Login from '../../../componentes/Login';
-import Botao from '../../../componentes/Botao';
-import Cadastro from '../../../componentes/Cadastro';
 import textos from '../../../mocks/textos';
 
 const width = Dimensions.get('screen').width;
 
-export default function Detalhes({ subtitulo, login, senha, base, botao, botaoCadastro, navigation }) {
+export default function Detalhes({ subtitulo, login, senha, tela_mostra }) {
     return <>
         <SafeAreaView>
             <Texto style={estilos.subtitulo}>{subtitulo}</Texto>
@@ -17,14 +15,11 @@ export default function Detalhes({ subtitulo, login, senha, base, botao, botaoCa
                 <Login>{ textos.detalhes.login }</Login>
                 <Texto style={estilos.login}>{login}</Texto>                
                 <Texto style={estilos.senha}>{senha}</Texto>
-            </View> 
-            <Image source={base} style={estilos.base} />
-            <Botao texto={botao} style={estilos.botao} onPress={() => navigation.navigate('SegundaTela')} />
-            <Botao texto={botaoCadastro} style={estilos.botaoCadastro} onPress={() => navigation.navigate('QuartaTela')} />
+            </View>          
+            <Image source={tela_mostra} style={estilos.tela_mostra} />
         </SafeAreaView>
     </>
 }
-
 const estilos = StyleSheet.create({
     subtitulo: {
         width: "100%",
@@ -47,22 +42,9 @@ const estilos = StyleSheet.create({
         paddingVertical: 70,
         alignItems: "center",
     },
-    botao: {
-        marginTop: 320,
-        marginLeft: 50,
-        marginRight: 16,
-        position: "absolute",
-    },
-    botaoCadastro: {
-        marginTop: 368,
-        marginLeft: 50,
-        marginRight: 16,
-        position: "absolute",
-    },
-    base: {
+    tela_mostra: {
         width: "100%",
         height: 1252 / 2675 * width,
-        lineHeight: 22,
-        marginTop: -80,
+        lineHeight: 22
     },
 })
