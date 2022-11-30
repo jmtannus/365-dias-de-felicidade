@@ -1,5 +1,4 @@
 import React from 'react';
-import { View, Text } from 'react-native';
 //import Constants from 'expo-constants';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -12,6 +11,8 @@ import AppLoading from 'expo-app-loading';
 import PrimeiraTela from './src/telas/PrimeiraTela';
 import SegundaTela from './src/telas/SegundaTela';
 import TerceiraTela from './src/telas/TerceiraTela';
+import QuartaTela from './src/telas/QuartaTela';
+import QuintaTela  from './src/telas/QuintaTela';
 
 const Stack = createNativeStackNavigator();
 
@@ -29,6 +30,8 @@ export default function App() {
           <Stack.Screen name="PrimeiraTela" component={PrimeiraTela} options={{headerShown: false}} />
           <Stack.Screen name="SegundaTela" component={SegundaTela} options={{headerTransparent: true}} />
           <Stack.Screen name="TerceiraTela" component={TerceiraTela} options={{headerTransparent: true}} />
+          <Stack.Screen name="QuartaTela" component={QuartaTela} options={{headerTransparent: true}} />
+          <Stack.Screen name="QuintaTela" component={QuintaTela} options={{headerTransparent: true}} />
         </Stack.Navigator>
     </NavigationContainer>
   );

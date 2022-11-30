@@ -19,8 +19,8 @@ export default function Detalhes({ subtitulo, login, senha, base, botao, botaoCa
                 <Texto style={estilos.senha}>{senha}</Texto>
             </View> 
             <Image source={base} style={estilos.base} />
-            <Botao texto={botao} style={estilos.botao} onPress={() => navigation.navigate('SegundaTela')} />
-            <Botao texto={botaoCadastro} style={estilos.botaoCadastro} onPress={() => navigation.navigate('QuartaTela')} />
+            <Botao texto={botao} style={estilos.botao} onPress={() => navigation.navigate('QuintaTela')} />
+            <Cadastro texto={botaoCadastro} style={estilos.botaoCadastro} onPress={() => navigation.navigate('QuartaTela')} />
         </SafeAreaView>
     </>
 }
@@ -36,7 +36,7 @@ const estilos = StyleSheet.create({
         fontWeight: "bold",
         marginTop: -150,
     },
-    descrição: {
+    descricao: {
         color: "#A3A3A3",
         fontSize: 16,
         lineHeight: 26,
@@ -56,7 +56,7 @@ const estilos = StyleSheet.create({
     botaoCadastro: {
         marginTop: 368,
         marginLeft: 50,
-        marginRight: 16,
+        marginRight: 14,
         position: "absolute",
     },
     base: {

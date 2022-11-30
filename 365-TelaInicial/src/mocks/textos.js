@@ -2,6 +2,7 @@ import base from '../../assets/base.png';
 import logo from '../../assets/logo.png';
 import topo from '../../assets/topo.png';
 import telaTucano from '../../assets/telaTucano.png';
+import botao from '../componentes/Botao';
 
 const textos = {
   //primeira tela
@@ -27,6 +28,28 @@ const textos = {
     caixadetexto: "primeira",
     botaoSalvar: "Salvar",
     textoBotao: "Salvar",
+  },
+
+  //quarta tela
+  cadastro: {
+    titulo: "4ªpg AV1 22.2 JanaT²", 
+    subtitulo:" Crie sua Conta",
+    subtitulo1:" ou use seu e-mail para cadastro:",
+    caixaNome: "nome",
+    caixaEmail: "e-mail",
+    caixaNovaSenha: "nova senha",
+    caixaConfirme: "confirme a senha",
+    botao: "sign up",
+  },
+
+  //quinta tela
+  telaTresTextos: {
+    caixaNome: "nome",
+    caixaEmail: "email",
+    caixaNovaSenha: "primeira",
+    caixaConfirme: "confirme",
+    botaoSignUp: "salvar",
+    textoBotao: "salvar",
   },
 }
 
