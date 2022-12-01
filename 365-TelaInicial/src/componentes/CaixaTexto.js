@@ -11,7 +11,8 @@ export default function CaixaDeTexto({ }) {
           style={estilos.inputText}
           placeholder="FELICIDADE (pra cansar a bochecha de tanto sorrir)"
           variant="outlined"
-          maxLength={40}
+          maxLength={151} 
+          multiline numberOfLines={5}
         />
       </View>
     </Stack>
@@ -19,12 +20,15 @@ export default function CaixaDeTexto({ }) {
 }
 const estilos = StyleSheet.create({
   inputText: {
-    height: 85,
-    borderWidth: 2,
-    textAlign: "center",
-    borderColor: "#d4bb94",
-    borderRadius: 2,
-    padding: 10,
+     padding: 10,
+      marginLeft: 10,
+      marginTop: 8,
+      width: 270,
+      height: 80,
+      borderWidth: 1,
+      textAlign: "auto",
+      borderColor: "#d4bb94",
+      borderRadius: 3,
   },
   desejo: {
     padding: 8,

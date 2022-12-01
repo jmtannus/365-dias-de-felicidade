@@ -2,7 +2,6 @@ import base from '../../assets/base.png';
 import logo from '../../assets/logo.png';
 import topo from '../../assets/topo.png';
 import telaTucano from '../../assets/telaTucano.png';
-import botao from '../componentes/Botao';
 
 const textos = {
   //primeira tela
@@ -25,9 +24,7 @@ const textos = {
     titulo: "2ªpg AV1 22.2 JanaT²",
     subtitulo: ":) Descreva o que te",
     subtitulo1: " fez sorrir hoje: :D",
-    caixadetexto: "primeira",
-    botaoSalvar: "Salvar",
-    textoBotao: "Salvar",
+    botaoSalvar: "salvar",
   },
 
   //quarta tela
