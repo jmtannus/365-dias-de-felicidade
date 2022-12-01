@@ -17,14 +17,14 @@ const textos = {
     botaoCadastro: "sou novo",
     base: base,
   },
-  
+
   //segunda tela
   telaTucano: {
     telaTucano: telaTucano,
     logo: logo,
-    titulo: "2ªpg AV1 22.2 JanaT²",    
-    subtitulo:":) Descreva o que te",
-    subtitulo1:" fez sorrir hoje: :D",
+    titulo: "2ªpg AV1 22.2 JanaT²",
+    subtitulo: ":) Descreva o que te",
+    subtitulo1: " fez sorrir hoje: :D",
     caixadetexto: "primeira",
     botaoSalvar: "Salvar",
     textoBotao: "Salvar",
@@ -32,9 +32,9 @@ const textos = {
 
   //quarta tela
   cadastro: {
-    titulo: "4ªpg AV1 22.2 JanaT²", 
-    subtitulo:" Crie sua Conta",
-    subtitulo1:" ou use seu e-mail para cadastro:",
+    titulo: "4ªpg AV1 22.2 JanaT²",
+    subtitulo: " Crie sua Conta",
+    subtitulo1: " ou use seu e-mail para cadastro:",
     caixaNome: "nome",
     caixaEmail: "e-mail",
     caixaNovaSenha: "nova senha",

@@ -5,8 +5,8 @@ import Texto from './Texto';
 
 export default function Cadastro({ texto, onPress, style }) {
   return <TouchableOpacity style={[estilos.botaoCadastro, style]} onPress={onPress}>
-  <Texto style={estilos.textoBotaoCadastro}>{ texto }</Texto>
-</TouchableOpacity>
+    <Texto style={estilos.textoBotaoCadastro}>{texto}</Texto>
+  </TouchableOpacity>
 }
 
 const estilos = StyleSheet.create({

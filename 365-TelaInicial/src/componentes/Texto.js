@@ -13,6 +13,7 @@ const estilos = StyleSheet.create({
     texto: {
         fontFamily: "MontserratRegular",
         fontWeight: "normal",
+        maxLength: 40,
     },
     textoNegrito: {
         fontFamily: "MontserratBold",

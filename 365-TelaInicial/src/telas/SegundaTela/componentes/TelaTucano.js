@@ -8,15 +8,15 @@ import CaixaTexto from '../../../componentes/CaixaTexto';
 
 import textos from '../../../mocks/textos';
 
-export default function TelaTucano( {navigation } ) {
-    return <> 
+export default function TelaTucano({ navigation }) {
+    return <>
         <View >
             <ImageBackground source={require('../../../../assets/telaTucano.png')} style={estilos.telaTucano} >
                 <Image source={textos.telaTucano.logo} style={estilos.logo} />
-                <Texto style={estilos.titulo}>{ textos.telaTucano.titulo }</Texto>
-                <Texto style={estilos.subtitulo}>{ textos.telaTucano.subtitulo }</Texto>
-                <Texto style={estilos.subtitulo1}>{ textos.telaTucano.subtitulo1 }</Texto>
-                <CaixaTexto>{ textos.telaTucano.caixadetexto }</CaixaTexto>
+                <Texto style={estilos.titulo}>{textos.telaTucano.titulo}</Texto>
+                <Texto style={estilos.subtitulo}>{textos.telaTucano.subtitulo}</Texto>
+                <Texto style={estilos.subtitulo1}>{textos.telaTucano.subtitulo1}</Texto>
+                <CaixaTexto>{textos.telaTucano.caixadetexto}</CaixaTexto>
 
                 <Botao texto={textos.telaTucano.botaoSalvar} style={estilos.botaoSalvar} onPress={() => navigation.navigate('TerceiraTela')} />
             </ImageBackground>
@@ -71,4 +71,4 @@ const estilos = StyleSheet.create({
         position: "absolute",
         textAlign: "center",
     },
-  })
+})

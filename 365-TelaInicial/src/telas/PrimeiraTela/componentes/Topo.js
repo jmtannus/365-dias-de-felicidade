@@ -30,7 +30,7 @@ const estilos = StyleSheet.create({
       position: "absolute",
       textAlign: "center",
       fontSize: 11,
-      lineHeight: 22,
+      lineHeight: 60,
       color: "#5f7862",
       fontWeight: "bold",
     },
