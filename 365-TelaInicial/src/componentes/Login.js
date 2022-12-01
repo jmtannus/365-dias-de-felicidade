@@ -18,6 +18,7 @@ export default function Login({ }) {
           placeholder="senha"
           variant="outlined"
           maxLength={40}
+          secureTextEntry
         />
       </View>
     </Stack>
