@@ -14,11 +14,11 @@ Projeto AV1, utilizando as ferramentas do React Native com Expo.
 
 ## Detalhes do projeto
 
-<!--Textos e imagens que descrevam seu projeto, suas conquistas, seus desafios, próximos passos, etc...-->
+<!--Textos e imagens que descrevam seu projeto, suas conquistas, seus desafios, próximos passos, etc-->
 Aplicativo onde você escreve os momentos que te fizeram sorrir no dia. Três é o ideal, mas se houver mais momentos felizes, melhor ainda! Para guardar, recordar e perceber que a felicidade é feita de momentos felizes.
 projeto utilizando react native com expo
 
-# Hello Janaina!
+# Hello Janaina
 I hope you are fine.  
 
 Unfortunatelly our class has turned into a new format, outside of the traditional class (not by our falt, of corse).  
